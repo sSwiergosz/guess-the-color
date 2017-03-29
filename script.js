@@ -63,7 +63,7 @@ for(var i = 0; i < squares.length; i++) {
 	//add clickListeners to squares
 	squares[i].addEventListener("click", function() {
 		//get color of clicked square
-		var clickedColor = this.style.background;
+		var clickedColor = this.style.backgroundColor;
 		//compare color to picked color
 		if(clickedColor === pickedColor) {
 			messageDisplay.textContent = "Correct!";
@@ -73,7 +73,7 @@ for(var i = 0; i < squares.length; i++) {
 			resetButton.textContent = "Play again";
 		}
 		else {
-			this.style.background = "#232323";
+			this.style.backgroundColor = "#232323";
 			messageDisplay.textContent = "Try again!";
 		}
 	});
